@@ -72,3 +72,4 @@
     function createFirework(x, y) {
       const color = `hsl(${Math.random() * 360}, 100%, 50%)`; // Random color
       for (let i = 0; i < maxParticles; i++) {
+        particles.push(new Particle(x, y, color));
